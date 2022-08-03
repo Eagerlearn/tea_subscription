@@ -1,5 +1,5 @@
 # README
-![image](https://user-images.githubusercontent.com/97060659/180051493-814ea045-c5b4-4bdb-8f2d-2d6af0ea37ab.png)
+
 # Tea Subscription Back-End
 
 ## Table of Contents
