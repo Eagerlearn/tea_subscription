@@ -3,5 +3,3 @@ class Api::V1::CustomersController < ApplicationController
     render json: Customer.all
   end
 end
-
-# TeaSerializer.new(Tea.all)
