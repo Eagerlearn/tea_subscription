@@ -1,16 +1,5 @@
 # README
 
-# Tea Subscription Back-End
-
-## Table of Contents
-
-- [Deployed App](#deployed-app)
-- [Local Deployment](#local-deployment)
-- [Dev Team](#dev-team)
-- [Description](#description)
-- [Testing & Performance](#testing--performance)
-- [PostgreSQL Schema](#postgresql-schema)
-- [GraphQL Endpoints](#graphql-endpoints)
 
 ## Deployed App
 
@@ -18,7 +7,9 @@ TBD
 
 ## Local Deployment
 
-See this [Local Setup Guide](local_setup_guide.md) for detailed instructions on how to deploy the app in a local environment.
+Git Clone [https://github.com/Eagerlearn/tea_subscription]
+bundle install
+rails db:{create,migrate,seed}
 
 ## Dev Team
 
@@ -35,27 +26,35 @@ At date of project completion, the Tea_Subscription service has TBD test coverag
 
 ## PostgreSQL Schema
 
-| Users | Data Type | Keys |
+| Customers | Data Type | Keys |
 | ----------- | ----------- | ----------- |
 | Id | ID | Primary Key |
-| username | String |  |
-| flowrate | float | |
+| first_name | String |  |
+| last_name | String | |
+| email | String | |
+| address | String | |
 
-
-| DailyRecords | Data Type | Keys |
+| Teas | Data Type | Keys |
 | ----------- | ----------- | ----------- |
 | Id | ID | Primary Key |
-| user_id | Integer | User Foreign Key|
-| bag_count | Integer | |
-| bottle_count | Integer | |
-| starw_count | Integer | |
-| shower_time | Integer | |
+| title | String |  |
+| description | String |  |
+| temperature | Integer |  |
+| brew_time | Integer |  |
+
+| Subscriptions | Data Type | Keys |
+| ----------- | ----------- | ----------- |
+| Id | ID | Primary Key |
+| customer_id | Integer | User Foreign Key|
+| tea_id | Integer | User Foreign Key|
+| title | String | |
+| price | Integer | |
+| status | Integer | |
+| frequency | Integer | |
 
 
 ## REST Endpoints
 
-The REST API endpoints are part of a Postman collection. For detailed examples of all the endpoints and example responses, see my [GraphQL Endpoints Guide](graphql_endpoints.md) or click the specific query or mutation below to go its section.
-
-<!-- To make live queries to the GraphQL endpoint and see live schema information, setup the back-end using the [local deployment instructions](local_setup_guide.md). -->
+TBD
 
 
